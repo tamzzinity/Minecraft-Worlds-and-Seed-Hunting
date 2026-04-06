@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minecraft Seed Validator</title>
+</head>
+<body>
+  <h3>Enter Minecraft Seed</h3>
+  <input type="text" id="seedInput" placeholder="Enter seed (e.g. -5503980534440770057)">
+  <button onclick="validateSeed()">Validate</button>
+  <p id="result"></p>
+
+  <script>
+    // Convert string seed to number like Minecraft does
+    function stringToSeed(str) {
+      if (str === "" || str === "[random]") return "[random]";
+      let hash = 0;
+      for (let i = 0; i < str.length; i++) {
+        const char = str.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char; // hash * 31 + char
+        hash |= 0; // Convert to 32-bit integer
+      }
+      return hash;
+    }
+
+    // Validate and process seed
+    function validateSeed() {
+      const input = document.getElementById("seedInput").value.trim();
+      let seed;
+
+      if (input === "" || input === "[random]") {
+        seed = "[random]";
+      } else {
+        const num = parseInt(input);
+        seed = isNaN(num) ? stringToSeed(input) : num;
+      }
+
+      document.getElementById("result").textContent = 
+        `Validated Seed: ${seed}`;
+    }
+  </script>
+</body>
+</html>   

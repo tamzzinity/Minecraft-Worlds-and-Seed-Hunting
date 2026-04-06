@@ -8,4 +8,4 @@ This is a repo about all Minecraft special seeds and worlds that generate strang
 - Scary worlds and seeds.
 - Logic about terrain generation.
 
-<img src = "Face.png"/>
+<img src = "https://github.com/tamzzinity/Minecraft-Worlds-and-Seed-Hunting/blob/main/World%20Images/HerobrineFace%20Seed/Face.png?raw=true"/>

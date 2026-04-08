@@ -1,15 +1,19 @@
 // Average Stuff
-let stoneSpawn = "63, 58";
+let stoneSpawn = "Above Y 8";
 console.log( "Stone Spawn:" + stoneSpawn);
 
-let deepslateSpawn = "1, -15";
+let deepslateSpawn = "8, -64";
 console.log("Deepslate Spawn:" + deepslateSpawn);
 
-let graniteSpawn = "0, 60";
+let graniteSpawn = "Random Areas";
 console.log("Granite Spawn:" + graniteSpawn);
 
-let andesiteSpawn = "79, -2";
+let andesiteSpawn = "Random Areas";
 console.log("Andesite Spawn" + andesiteSpawn);
 
-let dioriteSpawn = "54, .4";
+let dioriteSpawn = "Random Areas";
 console.log("Diorite Spawn" + dioriteSpawn);
+
+console.log("Updated Everyday")
+const updating = true
+

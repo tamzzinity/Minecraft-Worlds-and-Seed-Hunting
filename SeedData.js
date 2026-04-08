@@ -1,15 +1,15 @@
 // Average Stuff
 let stoneSpawn = "63, 58";
-console.log(stoneSpawn);
+console.log( "Stone Spawn:" + stoneSpawn);
 
 let deepslateSpawn = "1, -15";
-console.log(stoneSpawn);
+console.log("Deepslate Spawn:" + deepslateSpawn);
 
 let graniteSpawn = "0, 60";
-console.log(graniteSpawn);
+console.log("Granite Spawn:" + graniteSpawn);
 
 let andesiteSpawn = "60, 2";
-console.log(andesiteSpawn);
+console.log("Andesite Spawn" + andesiteSpawn);
 
 let dioriteSpawn = "54, .4";
-const.log(dioriteSpawn);
+console.log("Diorite Spawn" + dioriteSpawn);
